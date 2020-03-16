@@ -1,30 +1,46 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class BlackJackHand {
 
-	private String player;
-	private String computer;
+    private ArrayList <BlackJackCard> cards;
+    private int size;
 
-	public String getPlayer() {
-		return this.player;
-	}
+    public BlackJackHand(int size) {
+        this.size = size;
+    }
 
-	/**
-	 * 
-	 * @param player
-	 */
-	public void setPlayer(String player) {
-		this.player = player;
-	}
+    public void displayHand()
+    {
+        
+    }
+    
+    public void shuffle()
+    {
+        Collections.shuffle(cards);
+    }
+    
+    public ArrayList<BlackJackCard> showCards()
+    {
+        return cards;
+    }
+    /**
+     * @return the size
+     */
+    public int getSize() {
+        return size;
+    }
 
-	public String getComputer() {
-		return this.computer;
-	}
+    /**
+     * @param size the size to set
+     */
+    public void setSize(int size) {
+        this.size = size;
+    }
+    
+    
 
-	/**
-	 * 
-	 * @param computer
-	 */
-	public void setComputer(String computer) {
-		this.computer = computer;
-	}
+	
 
 }

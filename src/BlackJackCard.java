@@ -41,5 +41,12 @@ public class BlackJackCard {
 	public void setValue(Value value) {
 		this.value = value;
 	}
+        
+        public String toString()
+        {
+            return value +" of " + suits;
+        }
+        
+        
 
 }
